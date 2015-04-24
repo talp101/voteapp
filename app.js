@@ -28,7 +28,7 @@ app.use(function(req, res, next) {
   err.status = 404;
   next(err);
 });
-port = '5000';
+port = '80';
 app.set('port', port);
 var server = http.createServer(app).listen(port, function() {
     console.log('Express server listening on port ' + port);
