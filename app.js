@@ -28,8 +28,7 @@ app.use(function(req, res, next) {
   err.status = 404;
   next(err);
 });
-port = '80';
-app.set('port', port);
+app.set('port', (process.env.PORT || 5000));
 var server = http.createServer(app).listen(port, function() {
     console.log('Express server listening on port ' + port);
 });
