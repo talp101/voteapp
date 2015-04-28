@@ -13,7 +13,8 @@ var VoteApp = React.createClass({
 
     getInitialState : function(){
       return {
-          questions:{}
+          questions:{},
+          isVotedQuestions :[false, false, false, false,false, false]
       };
     },
 
@@ -29,14 +30,11 @@ var VoteApp = React.createClass({
 
 
     handleVoteOptionClicked: function(voteOption, callback){
-        if (!this.state.voted){
+        if (!this.state.isVotedQuestions[voteOption.questionId-1]){
             voteOption.votes++;
-            //var oldQuestions = this.state.questions;
-            //console.log(oldQuestions);
-            //console.log(voteOption);
-            //oldQuestions[voteOption.questionId-1].options[voteOption.id-1] = voteOption;
-            //this.setState({questions: oldQuestions});
-            //this.setState({questions:this.state.questions, voted:true});
+            var oldVoted = this.state.isVotedQuestions;
+            oldVoted[voteOption.questionId-1] = true;
+            this.setState({isVotedQuestions:oldVoted});
             this.socket.emit('voteUp', voteOption, function(err){
                 if(err)
                     return console.error('vote up error:', err);
