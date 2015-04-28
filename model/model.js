@@ -10,36 +10,36 @@ var model = {
         {
             id: 2,
             options: [
-                {id:1, image:'media/1.jpg', title:'Data', votes:0},
-                {id:2, image:'media/2.jpg', title:'Hardware', votes:0}
+                {id:1, image:'media/3.jpg', title:'Data', votes:0},
+                {id:2, image:'media/4.jpg', title:'Hardware', votes:0}
             ]
         },
         {
             id: 3,
             options: [
-                {id:1, image:'media/1.jpg', title:'Minerva', votes:0},
-                {id:2, image:'media/2.jpg', title:'Kambtala', votes:0}
+                {id:1, image:'media/11.jpg', title:'Minerva', votes:0},
+                {id:2, image:'media/12.jpg', title:'Kambtala', votes:0}
             ]
         },
         {
             id: 4,
             options: [
-                {id:1, image:'media/1.jpg', title:'Dai Dong', votes:0},
-                {id:2, image:'media/2.jpg', title:'Myself', votes:0}
+                {id:1, image:'media/5.jpg', title:'Dai Dong', votes:0},
+                {id:2, image:'media/6.jpg', title:'Myself', votes:0}
             ]
         },
         {
             id: 5,
             options: [
-                {id:1, image:'media/1.jpg', title:'Greater', votes:0},
-                {id:2, image:'media/2.jpg', title:'Break Things Up', votes:0}
+                {id:1, image:'media/8.jpg', title:'Greater', votes:0},
+                {id:2, image:'media/7.jpg', title:'Break Things Up', votes:0}
             ]
         },
         {
             id: 6,
             options: [
-                {id:1, image:'media/1.jpg', title:'Facebook', votes:0},
-                {id:2, image:'media/2.jpg', title:'Continue ', votes:0}
+                {id:1, image:'media/9.jpg', title:'Facebook', votes:0},
+                {id:2, image:'media/10.jpg', title:'Continue ', votes:0}
             ]
         }
     ]

@@ -36,13 +36,10 @@ var server = http.createServer(app).listen(app.get('port'), function() {
 // Initialize socket.io
 var io = require('socket.io').listen(server);
 io.on('connection', function(socket){
-    console.log('User connected');
     socket.on('fetchData', function(){
         socket.emit('data', model.questions);
     });
     socket.on('voteUp', function(voteOption, callback){
-        console.log('VoteUp');
-        console.log(voteOption);
         model.questions[voteOption.questionId-1].options[voteOption.id-1].votes = voteOption.votes;
         io.emit('data', model.questions);
     })
