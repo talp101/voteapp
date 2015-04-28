@@ -40,7 +40,7 @@ io.on('connection', function(socket){
         socket.emit('data', model.questions);
     });
     socket.on('voteUp', function(voteOption, callback){
-        model.questions[voteOption.questionId-1].options[voteOption.id-1].votes = voteOption.votes;
+        model.questions[voteOption.questionId-1].options[voteOption.id-1].votes++;
         io.emit('data', model.questions);
     })
 });
