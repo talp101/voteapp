@@ -8,7 +8,7 @@ var Footer = React.createClass({
             <footer className="page-footer orange">
                 <div className="footer-copyright">
                     <div className="container">
-                        Urieal And Tal Production
+                        Tal Peretz Production
                     </div>
                 </div>
             </footer>

@@ -6,7 +6,7 @@ var webpackConf = {
     cache: true,
     entry:
     {
-        main: './build/main.js'
+        main: './app/main.js'
     },
     output: {
         path: './assets/dist/',

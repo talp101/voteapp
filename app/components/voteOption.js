@@ -14,14 +14,14 @@ var VoteOption = React.createClass({
 
     render : function(){
         return (
-            <div className="col s6 m6">
+            <div className="col s6 m6" onClick={this.handleClick}>
                 <div className="card" onClick={this.handleClick}>
-                    <div className="card-image">
-                        <img src={this.props.image}/>
-                        <span className="card-title">{this.props.title}</span>
+                    <div className="card-image" onClick={this.handleClick}>
+                        <img src={this.props.image} onClick={this.handleClick} />
+                        <span className="card-title" onClick={this.handleClick}>{this.props.title}</span>
                     </div>
-                    <div className="card-content">
-                        <h5 className="header center">{this.props.votes}</h5>
+                    <div className="card-content" onClick={this.handleClick}>
+                        <h5 className="header center" onClick={this.handleClick}>{this.props.votes}</h5>
                     </div>
                 </div>
             </div>
