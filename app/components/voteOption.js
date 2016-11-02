@@ -14,6 +14,7 @@ var VoteOption = React.createClass({
 
     render : function(){
         return (
+            <div onClick={this.handleClick}>
             <div className="col s6 m6" onClick={this.handleClick}>
                 <div className="card" onClick={this.handleClick}>
                     <div className="card-image" onClick={this.handleClick}>
@@ -26,6 +27,7 @@ var VoteOption = React.createClass({
                         <h5 className="header center" onClick={this.handleClick}>{this.props.votes}</h5>
                     </div>
                 </div>
+            </div>
             </div>
         );
     }
