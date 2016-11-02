@@ -18,7 +18,7 @@ var VoteOption = React.createClass({
             <div className="col s6 m6" onClick={this.handleClick}>
                 <div className="card" onClick={this.handleClick}>
                     <div className="card-image" onClick={this.handleClick}>
-                        <img src={this.props.image} onClick={this.handleClick} height="137px" width="69px" />
+                        <img src={this.props.image} onClick={this.handleClick} height="100px" width="69px" />
                     </div>
                     <div className="card-content" onClick={this.handleClick}>
                         <p className="card-title black-text" onClick={this.handleClick}>{this.props.title}</p>
