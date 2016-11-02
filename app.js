@@ -29,7 +29,7 @@ app.use(function(req, res, next) {
   next(err);
 });
 app.set('port', (process.env.PORT || 5000));
-var server = http.createServer(app).listen('0.0.0.0',app.get('port'), function() {
+var server = http.createServer(app).listen(app.get('port'), function() {
     console.log('Express server listening on port ' + app.get('port'));
 });
 
